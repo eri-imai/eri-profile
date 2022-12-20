@@ -1,0 +1,220 @@
+body {
+	background-color: #fff;
+	color: #000;
+	margin: 0 auto;
+	padding: 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header {
+	top: 0;
+	width: 100%;
+	height: 120px;
+	background: #375060;
+	position: fixed;
+	z-index: 2;
+}
+
+.header-inner {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 30px;
+	padding: 40px 40px;
+}
+
+.nav-home {
+	float: left;
+}
+
+.nav-list li {
+	list-style: none;
+	float: right;
+	padding: 0 25px;
+}
+
+.nav-home,
+.nav-list li {
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-home:hover,
+.nav-list li:hover {
+	transform: scale(1.25);
+}
+
+.home {
+	height: 800px;
+}
+
+.logo {
+	margin: 444px auto;
+	width: 694px;
+	height: 290px;
+	animation-name: fadeDownAnime;
+	animation-duration: 1.8s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transition-timing-function: ease-out;
+}
+
+@keyframes fadeDownAnime {
+	from {
+		opacity: 0;
+		transform: translateY(-150px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.prf {
+	width: 100%;
+	height: 2000px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.sidebox {
+	width: 250px;
+	height: 1100px;
+	background-color: #5f9f99;
+	float: left;
+	box-shadow: #375060 3px 0 10px;
+	position: sticky;
+	top: 100px;
+}
+
+.photo {
+	padding-top: 150px;
+	padding-left: 24px;
+}
+
+.photo img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+#name {
+	font: 40px Mayence Premium;
+	color: #fff;
+	margin-top: 20px;
+	text-align: center;
+	-webkit-text-stroke: 1px #fff;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: #fff;
+}
+
+.content-1 {
+	flex-grow: 2;
+	height: 200px;
+}
+
+.content-2 {
+	flex-grow: 3;
+}
+
+h1 {
+	font: 80px Mayence Premium;
+	color: #375060;
+	margin-top: 80px;
+	text-align: center;
+	-webkit-text-stroke: 1px #375060;
+}
+
+h1.about {
+	display: block;
+	padding-top: 200px;
+	margin-top: -100px;
+}
+
+.about-text p{
+	text-align: center;
+font: 18px Kozuka Gothic Pr6N;
+margin: 25px;
+}
+
+.circle {
+	margin: 60px ;
+	text-align: center;
+
+}
+
+.circle2 {
+	display: inline-block;
+	width: 12px;
+	height: 12px; 
+	border: 1px solid #999;
+	border-radius: 50%;
+}
+
+.content-2 {
+margin: 10px 200px;
+background-color: #999;
+flex-grow: 3;
+}
+
+.skils {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.skil{
+background-color: antiquewhite;
+width: 200px;
+height: 300px;
+margin: 20px 50px;
+padding: 20px;
+text-align: center;
+}
+
+.comment {
+margin: 20px auto;
+text-align: left;
+}
+
+
+
+.star5_rating{
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	white-space: nowrap;
+	color: #CCCCCC; /* グレーカラー 自由に設定化 */
+	/*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star5_rating:before, .star5_rating:after{
+	content: '★★★★★';
+}
+
+.star5_rating:after{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #375060; 
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; } /* 星5 */
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star5_rating[data-rate="4"]:after{ width: 80%; } /* 星4 */
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+.star5_rating[data-rate="3"]:after{ width: 60%; } /* 星3 */
