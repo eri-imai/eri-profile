@@ -336,7 +336,7 @@ h2 {
 	margin: 70px 100px;
 	padding: 50px 110px;
 	border-radius: 30px;
-	box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
 	
 }
 
@@ -361,21 +361,14 @@ h2 {
 
 #toi {
 	margin-top: 5px;
-	width: 380px;
-	border: none;
-	font-size: 18px;
-	padding: 10px;
-	background: #fff;
-	outline: none;
-	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-button.btn {
+.btn {
 	font-size: 20px;
 	font-weight: bold;
 	position: relative;
 	display: inline-block;
-	padding: 1rem 4rem;
+	padding: 0.8rem 4rem;
 	top: 800px;
 	left: 300px;
 	cursor: pointer;
@@ -396,4 +389,57 @@ button.btn {
 .btn:hover {
 	margin-top: 3px;
 	border-bottom: 2px solid #999;
+}
+.limk {
+	
+}
+
+.links ul {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.links img {
+	width: 150px;
+	height: 150px;
+	opacity: 0.4;
+}
+
+.unit {
+  position: relative;
+  background: #CCC;
+  height: 15vh;
+}
+
+.wave {
+  position: absolute;
+  height: 78px;
+  width: 100%;
+  background: #CCC;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  right: -1.5%;
+  top: 60%;
+}
+
+.wave::after {
+  width: 55%;
+  height: 100%;
+  background-color: #CCC;
+  left: -1.5%;
+  top: 40%;
 }
