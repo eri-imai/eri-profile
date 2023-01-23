@@ -4,6 +4,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	font-family: Kozuka Gothic Pr6N;
+	overflow-x: hidden;
 }
 
 a {
@@ -45,6 +46,85 @@ header {
 .nav-home:hover,
 .nav-list li:hover {
 	transform: scale(1.25);
+}
+
+.hamburger-mane {
+	display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.hamburger{
+  width: 40px;
+  height: 35px;
+  position: relative;
+  position: fixed;
+	right: 40px;
+}
+.hamburger span{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255,255,255,0.6);
+	border-radius: 9%;
+	transition: .5s;
+	z-index: 9999;
+}
+.hamburger span:first-of-type{
+  top: 0;
+}
+.hamburger span:nth-of-type(2){
+  top: 50%;
+}
+.hamburger span:last-of-type{
+  top: 100%;
+}
+.slide-menu{
+  background-color: #212529;
+	opacity: 0.8;
+  position: fixed;
+  width: 70%;
+	height: 100%;
+	top: 0;
+  right: 0;
+	padding-top: 100px;
+	transform: translateX(100%);
+}
+
+.slide-menu li{
+  color: #fff;
+  line-height: 600%;
+  text-align: center;
+}
+
+.hamburger.active span:first-of-type{
+	top: 50%;
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-of-type(2){
+	opacity: 0;
+}
+.hamburger.active span:last-of-type{
+	top: 50%;
+  transform: rotate(-45deg);
+}
+.slide-menu.active{
+	transform: translateX(0); 
+}
+
+
+.hamburger-mane {
+	display: none;
+}
+
+@media screen and (max-width: 799px) {
+	.hamburger-mane {
+		display: contents;
+	}
+
+	.nav-list {
+		display: none;
+	}
 }
 
 .home {
@@ -461,10 +541,13 @@ footer p {
 	color: #5f9f99
 }
 
+
+/* フッターボタン */
+
 .top-btn {
 	position: absolute;
-	top: 60%;
-	left: 90vw;
+	bottom: 30px;
+	right: 30px;
 }
 
 .malu {
@@ -511,3 +594,4 @@ footer p {
   border-bottom-left-radius: 30%;
   transform: skewY(-45deg) translateY(50%);
 }
+
