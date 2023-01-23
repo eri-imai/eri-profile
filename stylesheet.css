@@ -3,6 +3,7 @@ body {
 	color: #000;
 	margin: 0 auto;
 	padding: 0;
+	font-family: Kozuka Gothic Pr6N;
 }
 
 a {
@@ -22,6 +23,7 @@ header {
 .header-inner {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 30px;
+	letter-spacing: 0.05em;
 	padding: 40px 40px;
 }
 
@@ -74,15 +76,11 @@ header {
 
 .prf {
 	width: 100%;
-	height: 2000px;
-	background-color: #fff;
-	display: flex;
-	flex-direction: row;
-	flex-grow: 1;
+	height: 2100px;
 }
 
 .sidebox {
-	width: 500px;
+	width: 20vw;
 	height: 1200px;
 	background-color: #5f9f99;
 	float: left;
@@ -92,15 +90,24 @@ header {
 }
 
 .photo {
-	padding-top: 150px;
-	padding-left: 65px;
+	margin-top: 150px;
+	margin-left: 2.5vw;
 }
 
-.photo img {
-	width: 200px;
-	height: 200px;
-	object-fit: cover;
+.photo {
+	width: 15vw;
 	border-radius: 50%;
+	background: #000;
+	object-fit: contain;
+	background-image: url("./image/eri face.jpg");
+	background-size: 110%;
+	background-position: 80% 30%;
+}
+
+.photo-in {
+	position: relative;
+	padding-top: 100%;
+	height: 0;
 }
 
 #name {
@@ -114,25 +121,19 @@ header {
 .content {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
 	background-color: #fff;
 }
 
 .content-1 {
-	flex-grow: 2;
 	height: 200px;
 	margin: 0 0 300px;
-}
-
-.content-2 {
-	flex-grow: 3;
 }
 
 h1 {
 	font: 80px Mayence Premium;
 	color: #375060;
 	margin-top: 80px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	text-align: center;
 	-webkit-text-stroke: 1px #375060;
 	display: block;
@@ -143,7 +144,7 @@ h1 {
 
 .about-text p {
 	text-align: center;
-	font: 18px Kozuka Gothic Pr6N;
+	font-size: 18px;
 	margin: 25px;
 }
 
@@ -163,8 +164,10 @@ h1 {
 
 .content-2 {
 	margin: 10px 200px;
-	/* background-color: #999; */
-	flex-grow: 3;
+}
+
+h5 {
+	font-size: 1.1rem;
 }
 
 .skils {
@@ -175,12 +178,28 @@ h1 {
 }
 
 .skil {
-	/* background-color: antiquewhite; */
-	width: 200px;
+	width: 12.5vw;
 	height: 300px;
-	margin: 20px 40px;
+	margin: 20px 1.5vw;
 	padding: 20px;
 	text-align: center;
+}
+
+@media screen and (max-width: 1342px) {
+	.content-2 {
+		margin: 10px 160px;
+	}
+
+	.skil {
+		width: 20vw;
+		height: 200px;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.comment {
+		display: none;
+	}
 }
 
 .skils img {
@@ -189,12 +208,14 @@ h1 {
 	margin-right: auto;
 }
 
+.wab {
+	width: 15px;
+}
+
 .comment {
 	margin: 20px auto;
 	text-align: left;
 }
-
-
 
 .star5_rating {
 	position: relative;
@@ -202,8 +223,6 @@ h1 {
 	display: inline-block;
 	white-space: nowrap;
 	color: #CCCCCC;
-	/* グレーカラー 自由に設定化 */
-	/*font-size: 30px; フォントサイズ 自由に設定化 */
 }
 
 .star5_rating:before,
@@ -246,7 +265,8 @@ h1 {
 }
 
 .work img {
-	width: 100%;
+	width: 95%;
+	margin: 0 auto;
 }
 
 /* .work img {
@@ -337,7 +357,6 @@ h2 {
 	padding: 50px 110px;
 	border-radius: 30px;
 	box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.3);
-	
 }
 
 .form-inner p {
@@ -372,8 +391,6 @@ h2 {
 	top: 800px;
 	left: 300px;
 	cursor: pointer;
-	-webkit-transition: all 0.2s;
-	transition: all 0.2s;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
@@ -388,58 +405,109 @@ h2 {
 
 .btn:hover {
 	margin-top: 3px;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
 	border-bottom: 2px solid #999;
 }
-.limk {
+
+@media screen and (max-width: 999px) {
+	.form-outer {
+		width: 80vw;
+	}
+
+	.form-inner {
+		width: 60vw;
+		margin-left: 10vw;
+		padding-left: 11vw;
+	}
+
+	.textBox {
+		width: 38vw;
+	}
 	
+	.btn {
+		left: 29.1vw;
+	}
 }
+
 
 .links ul {
 	display: flex;
 	justify-content: space-around;
-	width: 60%;
+	width: 50%;
 	margin: 0 auto;
 }
 
 .links img {
-	width: 150px;
-	height: 150px;
-	opacity: 0.4;
+	width: 100px;
+	height: 100px;
+	opacity: 0.1;
 }
 
-.unit {
-  position: relative;
-  background: #CCC;
-  height: 15vh;
+footer {
+	position: relative;
+	margin-top: 200px;
 }
 
-.wave {
-  position: absolute;
-  height: 78px;
-  width: 100%;
-  background: #CCC;
-  bottom: 0;
+footer img {
+	width: 100%;
 }
 
-.wave::before, .wave::after {
+footer p {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	color: #5f9f99
+}
+
+.top-btn {
+	position: absolute;
+	top: 60%;
+	left: 90vw;
+}
+
+.malu {
+	width: 65px;
+	background: #5f9f99;
+	border-radius: 50%;
+	box-shadow:1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.malu::before {
+	display: block;
+	content: '';
+	padding-top: 100%;
+}
+
+.triangle,
+.triangle::before,
+.triangle::after{
+  width: 25px;
+  height: 25px;
+  background: #fff;
+}
+
+.triangle::before,
+.triangle::after {
   content: "";
-  display: block;
   position: absolute;
-  border-radius: 100% 50%;
 }
 
-.wave::before {
-  width: 55%;
-  height: 109%;
-  background-color: #fff;
-  right: -1.5%;
-  top: 60%;
+.triangle {
+  position: absolute;
+  border-top-left-radius: 30%;
+  transform: rotate(30deg) skewY(30deg) scaleX(.86666);
+	top: 22%;
+	left: 31%;
 }
 
-.wave::after {
-  width: 55%;
-  height: 100%;
-  background-color: #CCC;
-  left: -1.5%;
-  top: 40%;
+.triangle::before {
+  border-top-right-radius: 30%;
+  transform: skewX(-45deg) translateX(50%);
+}
+
+.triangle::after {
+  border-bottom-left-radius: 30%;
+  transform: skewY(-45deg) translateY(50%);
 }

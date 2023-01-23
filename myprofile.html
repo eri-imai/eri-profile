@@ -3,19 +3,24 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
   <link rel="stylesheet" href="reseet.css" />
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
-  <a target="_blank" href="https://icons8.com/icon/85500/%E6%96%B0%E3%81%97%E3%81%84%E3%83%9D%E3%82%B9%E3%83%88">新しいポスト</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+  <a target="_blank"
+    href="https://icons8.com/icon/85500/%E6%96%B0%E3%81%97%E3%81%84%E3%83%9D%E3%82%B9%E3%83%88">新しいポスト</a> icon by <a
+    target="_blank" href="https://icons8.com">Icons8</a>
   <title>profile-eri-imai</title>
 </head>
 
 <body>
   <header>
     <nav class="header-inner">
-      <div class="nav-home"><a href="">HOME</a></div>
+      <div class="nav-home" id="top">
+        <a href="">HOME</a>
+      </div>
       <div class="nav-list">
         <ul>
           <li><a href="#contact">CONTACT</a></li>
@@ -33,7 +38,9 @@
 
     <div class="prf">
       <div class="sidebox">
-        <div class="photo"><img src="./image/eri face.jpg" alt="eri" /></div>
+        <div class="photo">
+          <img src="/image/eri face.jpg" class="photo-in"></img>
+        </div>
         <h4 id="name">eri imai</h4>
       </div>
 
@@ -44,11 +51,11 @@
             <p>
               はじめまして、今井惠利です。<br />
               ボードゲーム趣味が嵩じて、今ではそれがお仕事になりました。<br />
-              フリーランスで翻訳や、ローカライズDTP、ロゴ制作を承っています。
+              翻訳や、ローカライズDTP、ロゴ制作を承っています。
             </p>
             <p>
               新たなインプットが好きなので、<br />
-              現在はプログラミングを学びながらWEBデザインに力を入れています。
+              現在はHTML,CSS等を学びながらWEBデザインに力を入れています。
             </p>
             <p>
               フリーランスで培ったセルフマネジメントや<br />
@@ -84,7 +91,7 @@
             <div class="skil">
               <h5>Photoshop</h5>
               <img src="./image/skils/Photoshop.png" alt="Photoshop" />
-              <p><span class="star5_rating" data-rate="4.5"></span></p>
+              <p><span class="star5_rating" data-rate="5"></span></p>
               <p class="comment">
                 歴6年。画像の加工はもちろん、コラージュ制作やポスター、チラシ作りも得意です。
               </p>
@@ -92,7 +99,7 @@
             <div class="skil">
               <h5>InDesign</h5>
               <img src="./image/skils/InDesign.png" alt="InDesign" />
-              <p><span class="star5_rating" data-rate="4.5"></span></p>
+              <p><span class="star5_rating" data-rate="5"></span></p>
               <p class="comment">
                 歴3年。文字のフォントや余白、行間に気を使い、誰もが読みやすいデザインを常に心がけています。
               </p>
@@ -100,15 +107,15 @@
             <div class="skil">
               <h5>XD</h5>
               <img src="./image/skils/XD.png" alt="XD" />
-              <p><span class="star5_rating" data-rate="4.5"></span></p>
+              <p><span class="star5_rating" data-rate="4"></span></p>
               <p class="comment">
-                歴1ヶ月。少ししか触っていませんが、Adobe製品に慣れていたので大抵のことはすぐに理解できました。
+                歴1ヶ月。少ししか触っていませんが、Adobe製品に慣れていたのですぐに理解できました。
               </p>
             </div>
             <div class="skil">
               <h5>Webデザイン</h5>
-              <img src="./image/skils/webpps.png" alt="web" />
-              <p><span class="star5_rating" data-rate="4.5"></span></p>
+              <img class="web" src="./image/skils/webpps.png" alt="web" />
+              <p><span class="star5_rating" data-rate="3"></span></p>
               <p class="comment">
                 ニーズに沿ったデザインを考えます。配色のセンスならお任せください。
               </p>
@@ -116,7 +123,7 @@
             <div class="skil">
               <h5>コーディング</h5>
               <img src="./image/skils/programming.png" alt="pro" />
-              <p><span class="star5_rating" data-rate="4.5"></span></p>
+              <p><span class="star5_rating" data-rate="3.5"></span></p>
               <p class="comment">
                 まだまだ不慣れですが、理解が深まるほど、デザインにも生かせていけそうです。
               </p>
@@ -141,6 +148,7 @@
 
     <div class="work">
       <h1 id="works">works</h1>
+
       <!-- <div class="container">
         <img src="./image/works/アース.png" alt="earth" id="img1">
         <img src="./image/works/rule3.png" alt="rule" id="img2">
@@ -150,6 +158,7 @@
         <img src="image/works/card1.png" alt="card1" id="img6">
         <img src="image/works/card2.jpg" alt="card2" id="img">
       </div> -->
+
       <img src="/image/works/works.png" alt="workimg">
     </div>
 
@@ -171,33 +180,33 @@
       <div class="form-outer">
         <div class="form-inner">
           <form action="" method="post">
-          <p>
-            <labele for="nm">お名前<br>
-              <input class="textBox" type="text" name="name" id="nm">
-            </labele>
-          </p>
-          <p>
-            <label for="ma">メールアドレス<br>
-              <input class="textBox" type="text" name="email" id="ma">
-            </label>
-          </p>
-          <p>
-            <label for="te">電話番号<br>
-              <input class="textBox" type="text" name="tel" id="te">
-            </label>
-          </p>
-          <p>
-            <label for="toi">お問合せ内容<br>
-              <textarea class="textBox" name="situmonn" id="toi" rows="5"></textarea>
-            </label>
-          </p>
+            <p>
+              <labele for="nm">お名前<br>
+                <input class="textBox" type="text" name="name" id="nm">
+              </labele>
+            </p>
+            <p>
+              <label for="ma">メールアドレス<br>
+                <input class="textBox" type="text" name="email" id="ma">
+              </label>
+            </p>
+            <p>
+              <label for="te">電話番号<br>
+                <input class="textBox" type="text" name="tel" id="te">
+              </label>
+            </p>
+            <p>
+              <label for="toi">お問合せ内容<br>
+                <textarea class="textBox" name="situmonn" id="toi" rows="5"></textarea>
+              </label>
+            </p>
         </div>
-        <input type="submit" value="送信" class="btn" >
+        <input type="submit" value="送信" class="btn">
         </a>
-      </form>
+        </form>
       </div>
     </div>
-    
+
     <div class="circle">
       <span class="circle2"></span>
       <span class="circle2"></span>
@@ -225,12 +234,15 @@
   </main>
 
   <footer>
-    <section class="unit">
-      <div class="wave">
-        
+    <img src="/image/フッター.png" alt="footer">
+    <p>©︎2022eriimai</p>
+    <a href="">
+      <div class="top-btn">
+        <div class="malu"></div>
+        <div class="triangle"></div>
       </div>
-    </section>  
+    </a>
+    </div>
   </footer>
-</body>
 
 </html>
