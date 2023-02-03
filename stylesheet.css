@@ -12,6 +12,14 @@ a {
 	text-decoration: none;
 }
 
+.fadein {
+  opacity : 0;
+  transform: translateY(40px);
+  transition: 1.3s;
+}
+
+/* ヘッダー */
+
 header {
 	top: 0;
 	width: 100%;
@@ -39,14 +47,18 @@ header {
 }
 
 .nav-home,
-.nav-list li {
+.nav-list li ,
+.slide-menu li {
 	transition: all 0.5s ease-in-out;
 }
 
 .nav-home:hover,
-.nav-list li:hover {
+.nav-list li:hover ,
+.slide-menu li:hover {
 	transform: scale(1.25);
 }
+
+/* ハンバーガーメニュー */
 
 .hamburger-mane {
 	display: flex;
@@ -60,6 +72,8 @@ header {
   position: relative;
   position: fixed;
 	right: 40px;
+	background-color: #375060;
+	border-color: #375060;
 }
 .hamburger span{
   position: absolute;
@@ -81,7 +95,7 @@ header {
 }
 .slide-menu{
   background-color: #212529;
-	opacity: 0.8;
+	opacity: 0.9;
   position: fixed;
   width: 70%;
 	height: 100%;
@@ -92,9 +106,11 @@ header {
 }
 
 .slide-menu li{
+	position: relative;
   color: #fff;
   line-height: 600%;
   text-align: center;
+	text-decoration: none;
 }
 
 .hamburger.active span:first-of-type{
@@ -127,6 +143,8 @@ header {
 	}
 }
 
+/* ホーム */
+
 .home {
 	height: 800px;
 }
@@ -153,6 +171,8 @@ header {
 		transform: translateY(0);
 	}
 }
+
+/* プロフィール */
 
 .prf {
 	width: 100%;
@@ -221,7 +241,6 @@ h1 {
 	margin-top: -100px;
 }
 
-
 .about-text p {
 	text-align: center;
 	font-size: 18px;
@@ -231,7 +250,6 @@ h1 {
 .circle {
 	margin: 200px;
 	text-align: center;
-
 }
 
 .circle2 {
@@ -241,6 +259,8 @@ h1 {
 	border: 1px solid #999;
 	border-radius: 50%;
 }
+
+/* スキル */
 
 .content-2 {
 	margin: 10px 200px;
@@ -264,6 +284,11 @@ h5 {
 	padding: 20px;
 	text-align: center;
 }
+
+@media screen and (max-width: 799px) {
+	
+}
+
 
 @media screen and (max-width: 1342px) {
 	.content-2 {
@@ -339,6 +364,8 @@ h5 {
 .star5_rating[data-rate="3"]:after {
 	width: 60%;
 }
+
+/* ワーク */
 
 .work {
 	padding: 120px;
@@ -416,6 +443,8 @@ h2 {
 }
  */
 
+/* コンタクト */
+
 .form-outer {
 	position: relative;
 	margin: 0 auto;
@@ -425,7 +454,6 @@ h2 {
 	border-radius: 30px;
 	border-width: 72px 88px 160px;
 	border-bottom: 10px solid #375060;
-
 }
 
 .form-inner {
@@ -510,6 +538,7 @@ h2 {
 	}
 }
 
+/* リンク */
 
 .links ul {
 	display: flex;
@@ -540,7 +569,6 @@ footer p {
 	transform: translate(-50%, -70%);
 	color: #5f9f99
 }
-
 
 /* フッターボタン */
 
